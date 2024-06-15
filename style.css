@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:  #2719a7;
+    font-family: "Poppins", sanks-serif;
+    min-height: 100vh;
+}
+header {
+    font-size: 1.5rem;
+}
+header, 
+form {
+    min-height: 10vh;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+form select{
+    align-items: center;
+}
+form input, 
+form button {
+    padding: 0.4rem;
+    padding-left: 1rem;
+    font-size: 2rem;
+    border:none;
+    background: white;
+
+}
+form button {
+    color: #2719a7;
+    background:#d8fafa;
+    cursor: square;
+    transition: all 0.8 ease;
+    margin-left: 0.5rem;
+    border-color:#2719a7 ;
+}
+form button:hover {
+    color: white;
+    background: #1b0d96;
+}
+.fa-plus-circle {
+    margin-top: 0.3rem;
+    margin-left: -10px;
+    margin-right:-2px ;
+    margin-bottom:0.3rem;
+    border-color:none;
+}
+.todo-container {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.todo-list {
+    min-width: 35%;
+    list-style:none;
+    font-size:1rem;
+}
+.todo {
+    margin: 0.8rem;
+    background:#bef3e7;
+    color:black;
+    font-size: 1.4rem;
+    display: flex;
+    align-items:center;
+    transition: 0.3s;
+    border-radius: 2rem;
+}
+.todo li {
+    flex: 1;
+}
+.trash-btn, 
+.complete-btn {
+    color: white;
+    border:none;
+    padding: 1rem;
+    font-size: 1.45rem;
+    background:rgb(72, 218, 72);
+}
+.trash-btn {
+    border-top-right-radius: 1.50rem;
+    border-bottom-right-radius: 1.50rem;
+    background:rgb(206, 75, 75);
+}
+.todo-item {
+    padding: 0rem 10rem;
+}
+.fa-trash, 
+.fa-check-circle {
+    pointer-events:none;
+}
+.completed {
+    text-decoration:line-through;
+    opacity: 0.5;
+}
+.slide {
+    transform: translateX(10rem);
+    opacity: 0;
+}
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+    
+    
+}
+select {
+    color:rgb(32, 47, 179);
+    width: 9rem;
+    height: 3rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    background-color:grey;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
